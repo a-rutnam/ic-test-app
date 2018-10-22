@@ -1,0 +1,11 @@
+<h1> <%= @quiz.title %></h1>
+
+<% @quiz.question.each do |question| %>
+<ol>
+  <li> <%= question.question %> </li>
+</ol>
+
+<% end %>
+
+
+<p>Email: <%= @user.email %></p>
